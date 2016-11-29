@@ -31,13 +31,13 @@ Twitter.stream('statuses/filter', {track: '#VaiDarMerda'}, function(stream) {
 
   stream.on('data', function(tweet) {
 
-    console.log(tweet.text);
+    console.log(tweet);
 
     var randomIndex = Math.round(Math.random() * arrOfMagicSayings.length);
 
     var reply = "@" + tweet.user.screen_name + ' ' + arrOfMagicSayings[randomIndex];
 
-    Twitter.post('statuses/update', {status: reply},  function(error, tweetReply, response){
+    // Twitter.post('statuses/update', {status: reply},  function(error, tweetReply, response){
 
       if(error){
         console.log(error);
