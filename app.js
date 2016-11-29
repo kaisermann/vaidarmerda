@@ -22,7 +22,8 @@ var arrOfMagicSayings = [
   "Talvez dê merda, talvez não.",
   "Não vai dar merda.",
   "Fica tranquilho que hoje não vai dar merda. Hoje.",
-  "Meeeerda merda talvez não, no máximo um peidinho."
+  "Meeeerda merda talvez não, no máximo um peidinho.",
+	"https://youtu.be/c5ZRjdlLMEM"
 ];
 
 var Twitter = new TwitterPackage(secret);
