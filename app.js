@@ -1,8 +1,8 @@
-var TwitterPackage = require('twitter');
+const TwitterPackage = require('twitter');
+const secret = require("./secret.json");
+const Twitter = new TwitterPackage(secret);
 
-var secret = require("./secret.json");
-
-var arrOfMagicSayings = [
+const phrases = [
   "PUTA MERDA COM CERTEZA VAI DAR MERDA",
   "Vai dar merda.",
   "Não sei se vai dar merda não.",
@@ -25,29 +25,22 @@ var arrOfMagicSayings = [
   "Meeeerda merda talvez não, no máximo um peidinho."
 ];
 
-var Twitter = new TwitterPackage(secret);
+Twitter.stream('statuses/filter', {
+  track: '#VaiDarMerda'
+}, stream => {
 
-Twitter.stream('statuses/filter', {track: '#VaiDarMerda'}, function(stream) {
+  stream.on('data', tweet => {
 
-  stream.on('data', function(tweet) {
+    const randomIndex = Math.round(Math.random() * phrases.length);
+    const replyObj = {
+      status: `@${tweet.user.screen_name} ${phrases[randomIndex]}`
+    };
+    const replyCallback = (error, tweetReply, response) => {
+      console.log(`${error ? error : `[Reply] '${tweetReply.text}'`}`);
+    };
 
-    console.log(tweet);
-
-    var randomIndex = Math.round(Math.random() * arrOfMagicSayings.length);
-
-    var reply = "@" + tweet.user.screen_name + ' ' + arrOfMagicSayings[randomIndex];
-
-    Twitter.post('statuses/update', {status: reply},  function(error, tweetReply, response){
-
-      if(error){
-        console.log(error);
-      }
-
-      console.log(tweetReply.text);
-    });
+    console.log(`[Incoming] '@${tweet.user.screen_name} ${tweet.text}'`);
+    Twitter.post('statuses/update', replyObj, replyCallback);
   });
-
-  stream.on('error', function(error) {
-    console.log(error);
-  });
+  stream.on('error', error => console.log(error));
 });
