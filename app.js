@@ -12,9 +12,10 @@ Twitter.stream('statuses/filter', {
 
     const randomIndex = Math.round(Math.random() * phrases.length);
     const replyObj = {
+      in_reply_to_status_id: tweet.id_str,
       status: `@${tweet.user.screen_name} ${phrases[randomIndex]}`
     };
-    const replyCallback = (error, tweetReply, response) => {
+    const replyCallback = (error, tweetReply) => {
       console.log(`${error ? error : `[Reply] '${tweetReply.text}'`}`);
     };
 
