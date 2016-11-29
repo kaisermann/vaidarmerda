@@ -1,6 +1,6 @@
 var TwitterPackage = require('twitter');
 
-var secret = require("./secret");
+var secret = require("./secret.json");
 
 var arrOfMagicSayings = [
   "PUTA MERDA COM CERTEZA VAI DAR MERDA",
