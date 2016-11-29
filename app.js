@@ -12,7 +12,7 @@ var arrOfMagicSayings = [
   "Nhé, até que talvez nem dê merda.",
   "Pensa direitinho se vai dar merda mesmo.",
   "VISH MAINHA VAI DAR MERDA LEGAL.",
-  "Hello darkeness my old friend... Vai dar merda.",
+  "Hello darkness my old friend... Vai dar merda.",
   "Já deu merda e tu nem percebeu.",
   "Minhas fontes dizem que não, não vai dar merda.",
   "Sim - vai dar merda com certeza.",
