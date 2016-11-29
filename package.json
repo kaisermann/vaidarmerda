@@ -1,0 +1,22 @@
+{
+  "name": "vaidarmerda",
+  "version": "0.0.0",
+  "description": "Daí que eu resolvi aprender a usar a API do Twitter com node.js e me veio essa ideia idiota de responder tweets com a hashtag #vaidarmerda",
+  "main": "app.js",
+  "dependencies": {
+    "twitter": "~1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtrpldn/vaidarmerda.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/vtrpldn/vaidarmerda/issues"
+  }
+}
