@@ -4,7 +4,12 @@
   "description": "Daí que eu resolvi aprender a usar a API do Twitter com node.js e me veio essa ideia idiota de responder tweets com a hashtag #vaidarmerda",
   "main": "app.js",
   "dependencies": {
+    "gm": "^1.23.0",
+    "jimp": "^0.2.27",
+    "jsdom": "^9.8.3",
+    "md5": "^2.2.1",
     "node-gd": "^1.4.0",
+    "phantom": "^3.2.0",
     "twitter": "~1.4.0"
   },
   "devDependencies": {},

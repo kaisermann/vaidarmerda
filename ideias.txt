@@ -1,3 +1,5 @@
-[
+maconha:
+  Maconha é planta, vc que é uma droga
+
+suspeito:
   "ora ora, parece que temos um xeroque romes aqui, não é mesmo, {name}?"
-]
