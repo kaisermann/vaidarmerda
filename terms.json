@@ -1,0 +1,50 @@
+[
+  {
+    "terms": "maconha & droga",
+    "bot": "botagressivo",
+    "images": "assets/bgs/**",
+    "tweets": [
+      "Maconha é planta, vc, {name}, que é uma droga.",
+      {
+        "text": "é um ótimo argumento mesmo",
+        "caption": "Se maconha fosse coisa boa se chamaria boaconha, não é mesmo?",
+        "images": "assets/bgs/forest/**"
+      }
+    ]
+  },
+  {
+    "terms": "suspeito que",
+    "bot": "bot2",
+    "images": "assets/bgs/**",
+    "tweets": [
+      "Ora ora, parece que temos um xeroque romes aqui, não é mesmo, {name}?",
+    ]
+  },
+  {
+    "terms": "#vaidarmerda",
+    "bot": "vaidarmerdaaa",
+    "tweets": [
+      "PUTA MERDA COM CERTEZA VAI DAR MERDA",
+      "Vai dar merda.",
+      "Não sei se vai dar merda não.",
+      "Porra, vai dar merda total.",
+      "Até que não vai dar merda não.",
+      "Acabei de ver aqui que vai dar merda sim.",
+      "Nhé, até que talvez nem dê merda.",
+      "Pensa direitinho se vai dar merda mesmo.",
+      "VISH MAINHA VAI DAR MERDA LEGAL.",
+      "Hello darkness my old friend... Vai dar merda.",
+      "Já deu merda e tu nem percebeu.",
+      "Minhas fontes dizem que não, não vai dar merda.",
+      "Sim - vai dar merda com certeza.",
+      "Pode dar merda, pode não dar, a gente nunca sabe.",
+      "Não estou nem sentindo o cheiro da merda.",
+      "Deu merda.",
+      "Talvez dê merda, talvez não.",
+      "Não vai dar merda.",
+      "Fica tranquilho que hoje não vai dar merda. Hoje.",
+      "Meeeerda merda talvez não, no máximo um peidinho.",
+      "https://youtu.be/c5ZRjdlLMEM"
+    ]
+  }
+]
